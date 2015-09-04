@@ -76,10 +76,10 @@ function blankslate_widgets_init()
         'after_title' => '</h3>',
     ));
     register_sidebar(array(
-        'name'=> 'Right Sidebar',
-        'id' => 'right_sidebar',
-        'before_widget' => '<li id="%1$s" class="widget %2$s">',
-        'after_widget' => '</li>',
+        'name'=> 'CTA Widget',
+        'id' => 'cta_sidebar',
+        'before_widget' => '<div id="cta" class="widget %2$s">',
+        'after_widget' => '</div>',
         'before_title' => '<h3>',
         'after_title' => '</h3>',
     ));

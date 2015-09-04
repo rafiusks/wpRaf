@@ -1,7 +1,9 @@
 <?php get_header(); ?>
-<?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Right Sidebar')) : ?>
-    [ do default stuff if no widgets ]
-<?php endif; ?>
+<?php echo do_shortcode('[metaslider id=7]'); ?>
+<div id="ctaWrapper">
+    <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('CTA Widget')) : ?>
+    <?php endif; ?>
+</div>
 <section id="content" role="main">
     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
     <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>

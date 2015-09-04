@@ -11,10 +11,14 @@ $footerHeight: 200px;
 * {
   margin: 0;
 }
-  
+
+html {
+  overflow: hidden;
+}
+
 html,
 body{
-  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 html, body {
@@ -27,6 +31,32 @@ html, body {
   height: 100%;
   margin: 0 auto -$footerHeight; /* the bottom margin is the negative value of the footer's height */
 }
+
+#ctaWrapper {
+    clear: both;
+    display: flex;
+    justify-content: space-around;
+}
+
+#cta {
+    display: inline-flex;
+    width: 33%;
+    text-align: center;
+}
+
+#content {
+    padding: 0  5px 20px;
+}
+
+.post {
+    padding: 10px 5px 20px;
+}
+
+.post-edit-link {
+    float: right;
+}
+
+
 .push {
   content: "";
   display: block;
