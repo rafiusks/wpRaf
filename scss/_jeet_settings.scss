@@ -15,4 +15,4 @@ $jeet-layout-direction: "LTR" !default;
 
 /// Jeet's default max-width value.
 /// @type Number|Unit
-$jeet-max-width: 1410px !default;
+$jeet-max-width: $maxWidth !default;

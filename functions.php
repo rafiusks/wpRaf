@@ -70,8 +70,8 @@ function blankslate_widgets_init()
     register_sidebar(array(
         'name'=> 'Left Sidebar',
         'id' => 'left_sidebar',
-        'before_widget' => '<li id="%1$s" class="widget %2$s">',
-        'after_widget' => '</li>',
+        'before_widget' => '<div id="sidebar" class="widget %2$s">',
+        'after_widget' => '</div>',
         'before_title' => '<h3>',
         'after_title' => '</h3>',
     ));
@@ -79,6 +79,14 @@ function blankslate_widgets_init()
         'name'=> 'CTA Widget',
         'id' => 'cta_sidebar',
         'before_widget' => '<div id="cta" class="widget %2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3>',
+        'after_title' => '</h3>',
+    ));
+    register_sidebar(array(
+        'name'=> 'Footer Widget',
+        'id' => 'footer_sidebar',
+        'before_widget' => '<div id="widgets" class="widget %2$s">',
         'after_widget' => '</div>',
         'before_title' => '<h3>',
         'after_title' => '</h3>',

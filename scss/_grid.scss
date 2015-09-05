@@ -2,7 +2,7 @@
 @include j-edit();
 
 #wrapper {
-  @include j-center(1200px);
+  @include j-center($maxWidth);
   padding: 0 15px;
 }
 
@@ -30,13 +30,19 @@
   margin: 0;
 }
 
+#contentWrapper {
+  display: inline-flex;
+  justify-content: space-between;
+  @include j-column(12/12);
+}
+
 #content {
   @include j-column(9/12);
   margin: 0;
-  float: $contentPosition;
 }
 
-#sidebar {
+#contentWrapper #sidebar {
   @include j-column(3/12);
+  order: $sidebarPosition;
   margin: 0;
 }

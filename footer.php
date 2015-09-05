@@ -1,3 +1,7 @@
+<div id="footerWidgetsWrapper">
+    <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Footer Widget')) : ?>
+</div>
+<?php endif; ?>
 <div class="clear push"></div>
 </div>
 <footer id="footer" role="contentinfo">

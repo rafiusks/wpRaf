@@ -1,10 +1,10 @@
-@import url(../css/style.css);
-@import '../css/bootstrap.css';
+@import 'bootstrap';
+@import 'theme_settings';
+@import "variables";
+@import "jeet_settings";
 @import "grid";
 @import 'nav';
-@import 'specific_css';
 
-$contentPosition: right;
 $footerHeight: 200px;
 
 
@@ -32,13 +32,15 @@ html, body {
   margin: 0 auto -$footerHeight; /* the bottom margin is the negative value of the footer's height */
 }
 
-#ctaWrapper {
+#ctaWrapper,
+#footerWidgets{
     clear: both;
     display: flex;
     justify-content: space-around;
 }
 
-#cta {
+#cta,
+#widgets{
     display: inline-flex;
     width: 33%;
     text-align: center;
