@@ -1,0 +1,37 @@
+$primaryFont: Roboto;
+$fallbackFonts: Arial, Verdana, 'Times New Romans';
+
+.primaryFont {
+    font-family: $primaryFont, $fallbackFonts;
+}
+
+.secondaryFont {
+    font-family: $secondaryFont, $fallbackFonts;
+}
+
+html {
+  @extend .primaryFont;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    padding: 10px 0;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 35px;
+}
+
+h3 {
+    font-size: 30px;
+    font-weight: 500;
+
+}
+

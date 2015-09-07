@@ -1,0 +1,48 @@
+@import 'jeet/jeet';
+@include j-edit();
+
+#wrapper {
+  @include j-center($maxWidth);
+}
+
+#site-title,
+#site-description{
+  @include j-column(1/2);
+}
+
+#menu {
+  @include j-column(12/12);
+}
+
+#search {
+  @include j-column(3/12);
+  float: right;
+}
+
+.menu {
+  @include j-column(9/12);
+  float: left;
+}
+
+.metaslider {
+  @include j-column(12/12);
+  margin: 0;
+}
+
+#contentWrapper {
+  display: inline-flex;
+  justify-content: space-between;
+  @include j-column(12/12);
+}
+
+#content {
+  @include j-column(9/12);
+  margin: 0;
+}
+
+#sidebarWrapper {
+  @include j-column(3/12);
+  order: $sidebarPosition;
+  margin: 0;
+}
+

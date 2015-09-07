@@ -1,0 +1,68 @@
+@import 'bootstrap';
+@import 'theme_settings';
+@import "variables";
+@import "jeet_settings";
+@import "grid";
+@import 'nav';
+
+$footerHeight: 100px;
+
+
+* {
+  margin: 0;
+}
+
+html {
+  overflow: hidden;
+}
+
+html,
+body{
+  overflow-x: hidden;
+}
+
+html, body {
+  height: 100%;
+}
+
+#wrapper {
+  min-height: 100%;
+  height: auto !important; /* This line and the next line are not necessary unless you need IE6 support */
+  height: 100%;
+  margin: 0 auto -$footerHeight; /* the bottom margin is the negative value of the footer's height */
+}
+
+#ctaWrapper,
+#footerWidgetsWrapper{
+    clear: both;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+#cta,
+#widgets{
+    display: inline-flex;
+    margin: auto;
+}
+
+#content {
+    padding: 0  5px 20px;
+}
+
+.post {
+    padding: 10px 5px 20px;
+}
+
+.post-edit-link {
+    float: right;
+}
+
+.push {
+  content: "";
+  display: block;
+}
+#footer,
+.push {
+  height: $footerHeight; /* .push must be the same height as .footer */
+}
