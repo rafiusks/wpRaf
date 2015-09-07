@@ -5,7 +5,7 @@
 @import "grid";
 @import 'nav';
 
-$footerHeight: 200px;
+$footerHeight: 100px;
 
 
 * {
@@ -33,17 +33,17 @@ html, body {
 }
 
 #ctaWrapper,
-#footerWidgets{
+#footerWidgetsWrapper{
     clear: both;
     display: flex;
     justify-content: space-around;
+    padding: 10px 0;
 }
 
 #cta,
 #widgets{
     display: inline-flex;
-    width: 33%;
-    text-align: center;
+    margin: auto;
 }
 
 #content {
@@ -57,7 +57,6 @@ html, body {
 .post-edit-link {
     float: right;
 }
-
 
 .push {
   content: "";

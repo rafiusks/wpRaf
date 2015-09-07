@@ -6,9 +6,11 @@
     <?php endif; ?>
 </div>
 <div id="contentWrapper">
-    <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Left Sidebar')) : ?>
-        <?php $contentWidth = "style='width:100%'"; ?>
-    <?php endif; ?>
+    <div id="sidebarWrapper">
+        <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Left Sidebar')) : ?>
+            <?php $contentWidth = "style='width:100%'"; ?>
+        <?php endif; ?>
+    </div>
     <section id="content" <?php echo $contentWidth ?> role="main">
         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
         <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>

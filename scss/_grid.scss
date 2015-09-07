@@ -3,7 +3,6 @@
 
 #wrapper {
   @include j-center($maxWidth);
-  padding: 0 15px;
 }
 
 #site-title,
@@ -41,8 +40,9 @@
   margin: 0;
 }
 
-#contentWrapper #sidebar {
+#sidebarWrapper {
   @include j-column(3/12);
   order: $sidebarPosition;
   margin: 0;
 }
+

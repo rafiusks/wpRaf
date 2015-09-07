@@ -1,1 +1,7 @@
-@import url(csscssmain.css);
+/*
+Theme Name: Raf
+Theme URI: http://www.ravmedia.net
+Author: Rafael Vidal
+*/
+
+@import "css/main.css";
